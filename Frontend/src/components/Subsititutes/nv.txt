@@ -1,0 +1,55 @@
+     <>
+        <nav className='navbar'>
+          <div className='navbar-container'>
+            {/* <div className='logo-container'>  */}
+              <Link to="/" className ='navbar-logo' onClick={closeMobileMenu}>
+                Q-Pons<i className='fab fa-typo3'> </i>
+              </Link> 
+
+              {/* <Link to="/" className ='navbar-byline'>
+                Coupon Generation Service
+              </Link> */}
+            {/* </div> */}
+            
+            <div className='menu-icon' onClick={handleClick}>
+              <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
+            </div>
+
+            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+              <li className='nav-item'>
+                <Link to='/home' className='nav-links' onClick={closeMobileMenu}>
+                  Home
+                </Link>
+              </li>
+            </ul>
+
+            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+              <li className='nav-item'>
+                <Link to='/generate-coupon' className='nav-links' onClick={closeMobileMenu}>
+                  Generate Coupon
+                </Link>
+              </li>
+            </ul>
+
+            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+              <li className='nav-item'>
+                <Link to='/profile' className='nav-links' onClick={closeMobileMenu}>
+                  Profile
+                </Link>
+              </li>
+            </ul>
+
+            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+              <li className='nav-item'>
+                <Link to='/coupon-services' className='nav-links' onClick={closeMobileMenu}>
+                  Coupons Services
+                </Link>
+              </li>
+            </ul>
+
+            {button && <Button buttonStyle='btn--outline'> LOGIN <span>&#62;</span><span>&#62;</span> </Button>}
+  
+          </div>
+        </nav>
+      </>
+ 

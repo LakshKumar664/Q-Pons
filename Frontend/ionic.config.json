@@ -1,0 +1,7 @@
+{
+  "name": "coupon",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.coupon",
+  "appName": "coupon",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "cordova": {}
+}
